@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Created By Abhishek -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Abhishek's Portfolio</title>
+      <link rel="stylesheet" href="index.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+
+   <body>
+      <div class="welcome">
+         <span class="wel_sub"></span>
+      </div>
+
+      <nav id="nav_bar">
+         <div>
+            <a class="logo" href="#main1">abhishek</a>
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a onclick="uncheck()" href="#main1">Home</a></li>
+            <li><a onclick="uncheck()" href="#main2">About</a></li>
+            <li><a onclick="uncheck()" href="#mainz">Skills</a></li>
+            <li><a onclick="uncheck()" href="#main3">projects</a></li>
+            <li><a onclick="uncheck()" href="#main4">Contact</a></li>
+         </ul>
+      </nav>
+      
+      <div id="main1">
+         <marquee id="content" scrollamount="10" behavior="alternate" direction="left">
+            <pre>                        Hello im Abhishek -- A Developer -- A Coder -- A Designer ;)    </pre>
+         </marquee>
+      </div>
+
+      <div id="main2">
+         <h2>About Me</h2>
+         <div class="main2_sub">
+            <img src="Images/my_img.jpg">
+            <div class="about-text">
+               <h5>Who Am I</h5>
+               <p>
+                  As a computer science student at Chitkara University, I have developed a strong foundation in programming and software development. 
+                  Through my coursework and personal projects, I have gained experience in various technologies such as Java, Python, Linux, frontend and backend.
+                  I have also applied my skills to create several personal projects. My projects include developing a website 
+                  using HTML, CSS, a JavaScript, and created a web app using React. These experiences have sparked my interest in 
+                  becoming a full-stack developer and I am excited to further explore this area of expertise. I am currently seeking an internship or placement 
+                  opportunity where I can leverage my skills and continue to develop my abilities as a <b>full-stack developer</b>.
+               </p>
+               <a href="Resume/Abhishek's Resume.pdf" target="_blank">
+                  <button id="resume_btn">My Resume</button>
+               </a>
+            </div>
+         </div>
+      </div>
+   
+      <div id="mainz">
+         <h2 id="S_heading">Skills</h2>
+         <div id="skills">
+            <div class="bars">
+               <div class="sname">
+                   <span>FRONTEND</span>
+                   <span>60%</span>
+               </div>
+               <div class="line fed"></div>
+            </div>
+            <div class="bars">
+               <div class="sname">
+                   <span>BACKEND</span>
+                   <span>50%</span>
+               </div>
+               <div class="line bed"></div>
+            </div>
+            <div class="bars">
+               <div class="sname">
+                   <span>JAVA</span>
+                   <span>65%</span>
+               </div>
+               <div class="line java"></div>
+            </div>
+            <div class="bars">
+               <div class="sname">
+                   <span>LINUX</span>
+                   <span>80%</span>
+               </div>
+               <div class="line linux"></div>
+            </div>
+            <div class="bars">
+               <div class="sname">
+                   <span>DSA</span>
+                   <span>70%</span>
+               </div>
+               <div class="line dsa"></div>
+            </div>
+         </div>
+      </div>
+
+      <div id="main3">
+         <h2 id="P_heading">Projects</h2>
+
+         
+      </div>
+   
+      <div id="main4">
+         <div class="contact" onclick="transit()" >
+            C<div id="O"><p id="helptext" class="Otext"><b>how can i help you...?</b></p></div>ntact
+         </div>
+         <div id="arrowdown" onclick="transit()">
+            <div>
+               <i class="fa-solid fa-caret-down"></i>
+            </div>
+         </div>
+         <div class="init">
+            <form onsubmit="Mail(); reset(); return false">
+               <input required id="name1" class="info" class="w3-border w3-round-large" name="entry.1506107446" type="text" placeholder="NAME" /><br>
+               <input required id="email" class="info" class="w3-border w3-round-large" name="entry.1027507575" type="email" placeholder="MAIL ID" /><br>
+               <input id="subject" class="info" class="w3-border w3-round-large" name="entry.412938103" type="text" placeholder="SUBJECT" /><br>
+               <textarea id="msg" class="info" class="w3-border w3-round-large" name="entry.1372952508" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea><br>
+               <button id="btn" onclick="status()" type="submit">SEND</button><br><br>
+               <p id="res_ok" style="color: lightgreen; display: none;">Response send successfully!</p>
+               <p id="res_failed" style="color: red; display: none;">Please fill out the fields!</p>
+               <iframe id="hidden_iframe" name="hidden_iframe" style="display: none;"></iframe>
+            </form>
+         </div>
+      </div>
+   
+      <div id="main5">
+         <p>
+            <a target="_blank" href="https://wa.me/918307401517"><i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="http://www.instagram.com/abhishek_sain1029"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/abhishek-sain-17b96b247"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/abhishek-coderr" ><i class="fa-brands fa-github"></i></a>
+         </p>
+      </div>
+   
+      <div id="main6">
+         <p>Created by Abhishek | <i class="fa-solid fa-copyright"></i> Rights Reserved</p>
+      </div>
+
+      <div onclick="topFunction()" id="topbtn">
+         <i class="fa-solid fa-arrow-up"></i>
+      </div>
+   </body>
+   <script src="index.js"></script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</html>
