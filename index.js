@@ -118,7 +118,7 @@ fetch('https://api.github.com/users/abhishek-coderr/repos')
        p.innerHTML =repoDetails[i].name;
        let link=repoDetails[i].name;
        add_model(repoDetails[i],div2);
-       img.setAttribute("src", `https://raw.githubusercontent.com/abhishek-coderr/${link}/main/img.jpg`);
+       img.setAttribute("src", `https://raw.githubusercontent.com/abhishek-coderr/${link}/master/img.jpg`);
        img.style.width="100%";
        img.style.height="100%";
        img.style.border="2px solid black"
@@ -229,21 +229,21 @@ function status(){
 }
 
 // Preventing Inspect and right click
-// document.addEventListener('contextmenu', event => event.preventDefault());
-// document.onkeydown = (e) => {
-//   if (e.key == 123) {
-//       e.preventDefault();
-//   }
-//   if (e.ctrlKey && e.shiftKey && e.key == 'I') {
-//       e.preventDefault();
-//   }
-//   if (e.ctrlKey && e.shiftKey && e.key == 'C') {
-//       e.preventDefault();
-//   }
-//   if (e.ctrlKey && e.shiftKey && e.key == 'J') {
-//       e.preventDefault();
-//   }
-//   if (e.ctrlKey && e.key == 'U') {
-//       e.preventDefault();
-//   }
-// };
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.onkeydown = (e) => {
+  if (e.key == 123) {
+      e.preventDefault();
+  }
+  if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+      e.preventDefault();
+  }
+  if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+      e.preventDefault();
+  }
+  if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+      e.preventDefault();
+  }
+  if (e.ctrlKey && e.key == 'U') {
+      e.preventDefault();
+  }
+};
