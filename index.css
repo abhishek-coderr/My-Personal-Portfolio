@@ -288,6 +288,7 @@ input[type="checkbox"]{
 .grid_container > div {
 	position: relative;
 	text-align: center;
+	cursor: pointer;
 	color:white;
 	margin: 10px;
 	font-size: 30px;
