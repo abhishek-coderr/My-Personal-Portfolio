@@ -153,7 +153,7 @@ fetch('https://api.github.com/users/abhishek-coderr/repos')
        let code =document.createElement('button');
        code.setAttribute('class', "code")
        code.textContent = "Source Code";
-       code.addEventListener('click',()=>{window.open(`https://github.com/abhishek-coderrz/${a}`, '_blank')});       
+       code.addEventListener('click',()=>{window.open(`https://github.com/abhishek-coderr/${a}`, '_blank')});       
        modal_child.append(cancel,title,about,preview,code)
        modal.append(modal_child)
        main3.appendChild(modal);
