@@ -60,10 +60,19 @@ body{
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
-#nav_bar ul li a:hover{
-	text-decoration: underline;
-  -webkit-text-decoration-color: #334bd3; /* Safari */  
-  text-decoration-color: #334bd3;
+#nav_bar ul li a::after{
+	content: "";
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background-color: rgb(65 30 242);
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease;
+}
+#nav_bar ul li a:hover::after{
+	transform: scale(1);
 }
 #nav_bar .menu-btn i{
   color: #fff;
@@ -552,6 +561,9 @@ input[type="checkbox"]{
   }
   #click:checked ~ ul li a{
     margin-left: 0px;
+  }
+  #nav_bar ul li a::after{
+    display: none;
   }
   #nav_bar ul li a.active,
   #nav_bar ul li a:hover{
