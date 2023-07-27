@@ -52,6 +52,7 @@ body{
 }
 #nav_bar ul li a{
   color: #f2f2f2;
+  position: relative;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
